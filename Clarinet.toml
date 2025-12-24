@@ -1,0 +1,14 @@
+[project]
+name = "stx-raffle"
+description = "Provably fair lottery system with Clarity 4 time-based features"
+authors = ["Chidera"]
+telemetry = false
+cache_dir = "./.cache"
+
+[repl]
+analysis = { passes = ["check_checker"] }
+
+[contracts.raffle]
+path = "contracts/raffle.clar"
+clarity_version = 4
+epoch = 3.3
