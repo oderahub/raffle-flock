@@ -1,0 +1,10 @@
+[network]
+name = "mainnet"
+stacks_node_rpc_address = "https://api.mainnet.hiro.so"
+deployment_fee_rate = 10
+
+[accounts.deployer]
+mnemonic = ""
+# Replace with your actual mnemonic phrase for mainnet deployment
+# IMPORTANT: Never commit your actual mnemonic to version control!
+# Use environment variables or secure secret management in production
