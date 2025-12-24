@@ -19,7 +19,9 @@ import {
 // ============================================
 
 // BigInt JSON serialization fix for WalletConnect
+// @ts-ignore - Adding toJSON to BigInt prototype for WalletConnect compatibility
 if (typeof BigInt.prototype.toJSON === 'undefined') {
+  // @ts-ignore
   BigInt.prototype.toJSON = function() {
     return this.toString();
   };
